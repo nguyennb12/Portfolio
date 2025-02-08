@@ -1,6 +1,14 @@
 # 🚀 Portfolio Website
 
-![image](https://github.com/user-attachments/assets/bec4bc61-fba1-413d-9013-a29a0fe38ba7)
+#Home Page
+![image](https://github.com/user-attachments/assets/00b44e51-0c87-4f04-9172-1a3cea669ffc)
+
+
+#About Me
+![image](https://github.com/user-attachments/assets/d8eda398-4686-4811-af85-f0716c88d93d)
+
+#Projects Page
+![image](https://github.com/user-attachments/assets/6d3febeb-2ab4-454e-968d-300555028f45)
 
 
 This is my personal **portfolio website** showcasing my projects, skills, and experience as a **Software Engineer**. Built with modern web technologies, it provides a clean and interactive way to learn more about me.
