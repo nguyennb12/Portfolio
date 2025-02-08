@@ -1,8 +1,39 @@
 export const About = () => {
-    const frontendSkills = ["React.js", "Vue.js", "Tailwind CSS", "TypeScript", "Boostrap"];
-    const backendSkills = ["JavaScript", "Node.js", "Python", "Django", "FastAPI", "C/C++", "C#"];
-    const dataBaseSkills = ["MongoDB", "PostgreSQL", "MySQL", "NoSQL"];
-    const tools = ["Git", "Jira", "Agile", "Microsoft Azure", "Scrum", "Docker", "Firebase", "AWS"];
+    const frontendSkills = [
+        "React.js",
+        "Vue.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Bootstrap" // Fixed typo from "Boostrap"
+    ];
+
+    const backendSkills = [
+        "JavaScript",
+        "Node.js",
+        "Python",
+        "Django",
+        "FastAPI",
+        "C/C++",
+        "C#"
+    ];
+
+    const dataBaseSkills = [
+        "MongoDB",
+        "PostgreSQL",
+        "MySQL",
+        "NoSQL"
+    ];
+
+    const devTools = [
+        "Git",
+        "Jira",
+        "Agile",
+        "Microsoft Azure",
+        "Scrum",
+        "Docker",
+        "Firebase",
+        "AWS"
+    ];
 
     return (
         <section
@@ -15,7 +46,7 @@ export const About = () => {
                     About Me
                 </h2>
                 {/* Glass Card Container */}
-                <div className="glass rounded-xl p-8 border border-white/10 border hover:-translate-y-1 transition-all ">
+                <div className="glass rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
                     {/* About Description */}
                     <p className="text-gray-300 mb-6">
                         Passionate developer with expertise in building scalable web
@@ -53,10 +84,11 @@ export const About = () => {
                                 ))}
                             </div>
                         </div>
+                        {/* Database Section (Fixed Mapping Issue) */}
                         <div>
                             <h3 className="text-xl font-bold mb-4 text-white">Database</h3>
                             <div className="flex flex-wrap gap-2">
-                                {backendSkills.map((tech, index) => (
+                                {dataBaseSkills.map((tech, index) => (
                                     <span
                                         key={index}
                                         className="bg-blue-500 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-500/80 
@@ -67,10 +99,11 @@ export const About = () => {
                                 ))}
                             </div>
                         </div>
+                        {/* Development Tools Section */}
                         <div>
-                            <h3 className="text-xl font-bold mb-4 text-white">Tools</h3>
+                            <h3 className="text-xl font-bold mb-4 text-white">Development Tools</h3>
                             <div className="flex flex-wrap gap-2">
-                                {tools.map((tech, index) => (
+                                {devTools.map((tech, index) => (
                                     <span
                                         key={index}
                                         className="bg-blue-500 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-500/80 
