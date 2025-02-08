@@ -3,6 +3,8 @@ import "./App.css";
 import { LoadingScreen } from "./compnents/LoadingScreen"; // Corrected typo in `components`
 import "./index.css";
 import { Navbar } from "./compnents/sections/Navbar";
+import { MobileMenu } from "./compnents/MobileMenu";
+import { Home } from "./compnents/sections/Home";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -17,6 +19,7 @@ function App() {
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Home />
       </div>
     </>
   );

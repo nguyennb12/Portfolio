@@ -13,7 +13,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                     Brian<span className="text-blue-500">.tech</span>{""}
                 </a>
 
-                <div className="w-7 h-5 realtive cursor-pointer md:hidden"
+                <div className="w-7 h-5 relative cursor-pointer md:hidden"
                     onClick={() => setMenuOpen((prev) => !prev)}
                 >
                     &#9776;
