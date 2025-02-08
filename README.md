@@ -1,6 +1,7 @@
 # 🚀 Portfolio Website
 
-![Portfolio Preview](https://via.placeholder.com/1200x600?text=Portfolio+Preview) <!-- Replace with an actual screenshot -->
+![image](https://github.com/user-attachments/assets/bec4bc61-fba1-413d-9013-a29a0fe38ba7)
+
 
 This is my personal **portfolio website** showcasing my projects, skills, and experience as a **Software Engineer**. Built with modern web technologies, it provides a clean and interactive way to learn more about me.
 
