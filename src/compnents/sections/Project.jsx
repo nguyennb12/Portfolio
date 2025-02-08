@@ -18,7 +18,6 @@ export const Projects = () => {
             githubLink: "https://github.com/nguyennb12/AI-Chatbot",
             projectLink: "#" // Replace with actual project link if available
         },
-
         {
             id: 3,
             title: "E-commerce",
@@ -34,6 +33,14 @@ export const Projects = () => {
             technologies: ["Node.js", "React.js", "Firebase", "MongoDB"],
             githubLink: "https://github.com/nguyennb12/Real-chat",
             projectLink: "#" // Replace with actual project link if available
+        },
+        {
+            id: 5,
+            title: "Photo App",
+            description: "A full-stack photo-sharing application with Firebase authentication and cloud storage. Users can securely sign up, upload, view, and manage their photos in the cloud. The app offers a seamless and responsive UI built with React, ensuring a smooth user experience.",
+            technologies: ["React.js", "Node.js", "Firebase Authentication", "Firebase Storage", "Firestore Database"],
+            githubLink: "https://github.com/nguyennb12/PhotoApp",
+            projectLink: "#" // Replace with actual project link if available
         }
     ];
 
@@ -44,13 +51,17 @@ export const Projects = () => {
                     Featured Projects
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                     {projects.map((project) => (
-                        <div key={project.id} className="glass rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all">
-
+                        <div
+                            key={project.id}
+                            className="glass rounded-xl p-6 border border-white/10 hover:-translate-y-1 transition-all flex flex-col h-full"
+                        >
                             {/* Project Title & Description */}
                             <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
-                            <p className="text-gray-300 mb-4">{project.description}</p>
+                            <p className="text-gray-300 mb-4 line-clamp-3">
+                                {project.description}
+                            </p>
 
                             {/* Tech Stack */}
                             <div className="flex flex-wrap gap-2 mb-4">
@@ -66,7 +77,7 @@ export const Projects = () => {
                             </div>
 
                             {/* Links */}
-                            <div className="flex justify-between items-center">
+                            <div className="flex justify-between items-center mt-auto">
                                 <a
                                     href={project.projectLink}
                                     className="text-blue-400 hover:text-blue-300 transition-colors"
