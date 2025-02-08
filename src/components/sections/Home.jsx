@@ -1,4 +1,7 @@
+import { useState, useEffect } from "react";
+
 export const Home = () => {
+    console.log("Home component rendered");
     return (
         <section
             id="home"
@@ -6,10 +9,10 @@ export const Home = () => {
         >
             <div className="text-center z-10 px-4">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 text-transparent bg-clip-text">
-                    Hi, I'm Brian
+                    I'm Brian
                 </h1>
                 <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                    I'm a third-year Software Engineering Technology student at Conestoga College
+                    I'm a third-year student at Conestoga College studying Software Engineering Technology,
                     with a strong passion for web development and software design.
                     I thrive on building innovative solutions and continuously expanding my skill set.
                     I am proficient in C, C#, C++, Python, and React,

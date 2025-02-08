@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import { LoadingScreen } from "./compnents/LoadingScreen"; // Corrected typo in `components`
 import "./index.css";
-import { Navbar } from "./compnents/sections/Navbar";
-import { MobileMenu } from "./compnents/MobileMenu";
-import { Home } from "./compnents/sections/Home";
-import { About } from "./compnents/sections/About";
-import { Projects } from "./compnents/sections/Project";
+import { LoadingScreen } from "./components/LoadingScreen"; // Corrected typo in `components`
+import { Navbar } from "./components/Navbar";
+import { MobileMenu } from "./components/MobileMenu";
+import { Home } from "./components/sections/Home";
+import { About } from "./components/sections/About";
+import { Projects } from "./components/sections/Project";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
