@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Home = () => {
     console.log("Home component rendered");
